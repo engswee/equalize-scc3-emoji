@@ -33,3 +33,12 @@ mvn clean test
 ## Results
 
 ![Results](images/results.png)
+
+## Built With
+* [Groovy](https://groovy-lang.org)
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+* [Maven](https://maven.apache.org)
+* [Spock](http://spockframework.org)
+* [GMavenPlus](https://github.com/groovy/GMavenPlus)
+* [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)
+* [emoji-java](https://github.com/vdurmont/emoji-java)
