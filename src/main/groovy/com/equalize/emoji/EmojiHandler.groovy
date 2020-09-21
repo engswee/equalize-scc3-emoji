@@ -1,7 +1,4 @@
 package com.equalize.emoji
-
-import com.vdurmont.emoji.EmojiParser
-
 //Reference:
 // Zero Width Joiner - https://en.wikipedia.org/wiki/Zero-width_joiner
 // Emoji Java library - https://github.com/vdurmont/emoji-java
@@ -13,6 +10,6 @@ class EmojiHandler {
     }
 
     String addJoiner(String emojis) {
-        return EmojiParser.extractEmojis(emojis).join(ZERO_WIDTH_JOINER)
+        return emojis.codePoints().collect { new StringBuilder().appendCodePoint(it).toString() }.join(ZERO_WIDTH_JOINER)
     }
 }
